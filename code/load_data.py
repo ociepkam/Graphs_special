@@ -61,7 +61,7 @@ def prepare_block_stimulus(images, win, config, folder):
         if image.find("_") != -1:
             image_id = int(image.split("_")[0])
         else:
-            image_id = int(image.split(".")[0])
+            image_id = image.split(".")[0]
         result.append({"image_ID": image_id,
                        "stimulus": stim,
                        "image_name": image})

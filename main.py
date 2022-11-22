@@ -78,6 +78,7 @@ def block(config, images, block_type, win, fixation, clock, screen_res, answers,
 
         draw_stim_list(extra_text, True)
         win.callOnFlip(clock.reset)
+        win.callOnFlip(event.clearEvents)
 
         # draw trial for answers_type == keyboard
         if config["answers_type"] == "keyboard":

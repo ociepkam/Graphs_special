@@ -1,7 +1,7 @@
 procedure_test: True
 randomize_trails: False
 
-screen_color: grey
+screen_color: "#DDDDDD"
 text_color: black
 text_size: 28
 
